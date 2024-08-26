@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.training.dto.ClientDTO;
 import com.training.model.ClientModel;
+import com.training.model.model2.TypeUser;
 import com.training.repository.ClientRepository;
 
 import lombok.extern.slf4j.Slf4j;
@@ -58,11 +59,14 @@ public class ClientService {
 	
 	private ClientModel fromDTO(ClientDTO dto) {
 		ClientModel client = new ClientModel();
-		client.setCpf(dto.getCpf());
-		client.setDataCadastro(LocalDate.parse(dto.getDataCadastro()));
-		client.setEmail(dto.getEmail());
-		client.setIdade(dto.getIdade());
-		client.setNome(dto.getNome());
+		
+		
+//		TypeUser.toEnum(null)
+//		client.setCpf(dto.getCpf());
+//		client.setDataCadastro(LocalDate.parse(dto.getDataCadastro()));
+//		client.setEmail(dto.getEmail());
+//		client.setIdade(dto.getIdade());
+//		client.setNome(dto.getNome());
 		
 		return client;
 	}

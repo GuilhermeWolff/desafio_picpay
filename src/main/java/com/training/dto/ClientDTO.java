@@ -1,6 +1,8 @@
 package com.training.dto;
 
 
+import java.time.LocalDate;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,14 +14,19 @@ import lombok.Setter;
 @Setter
 public class ClientDTO {
 	
-	private String nome;
-
-	private Long idade;
-
+	
+	private String name;
+	
 	private String email;
+	
+	private String cnpjCpf;
+	
+	private String password;
+	
+	private LocalDate createdAt;
+	
+	private String typeUser;
 
-	private String dataCadastro;
-
-	private Long cpf;
+	private Double saldo;
 
 }
