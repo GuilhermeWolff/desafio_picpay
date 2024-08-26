@@ -1,6 +1,6 @@
 package com.training.model;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -30,7 +30,7 @@ public class ClientModel {
 	public String email;
 	
 	@Column(name = "data_cadastro")
-	public Date dataCadastro;
+	public LocalDate  dataCadastro;
 	
 	@Column(name = "cpf")
 	public Long cpf;
